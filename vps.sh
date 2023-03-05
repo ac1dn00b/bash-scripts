@@ -10,4 +10,19 @@ chmod +x strap.sh
 
 ./strap.sh
 
-pacman -S wget python go git nmap masscan amass assetfinder httprobe waybackurls gobuster dirsearch subfinder seclists
+pacman -S wget python go git nmap masscan amass assetfinder httprobe waybackurls gobuster dirsearch subfinder seclists aquatone chromium jsparser sublist3r wpscan sqlmap knock massdns unfurl xsstrike aws-cli
+
+echo "Now let's install some XSS Tools"
+echo "Installing PwnXSS"
+pip install bs4
+pip install requests
+git clone https://github.com/pwn0sec/PwnXSS
+chmod 755 -R PwnXSS
+echo "done"
+
+echo "Installing kxss"
+go get github.com/Emoe/kxss
+echo "done"
+
+#TO DO
+#aws creds
