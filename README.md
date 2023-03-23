@@ -31,7 +31,16 @@ linode-vps is a script to make an initial installation of all the tools required
 - kxss
 
 # Installation
+When running on a new Linode Arch server, first run:
+1. pacman -Syu
+2. pacman -S git
+
+And then:
+
 git clone https://github.com/ac1dn00b/linode-vps.git
+
 cd linode-vps
+
 chmod +x vps.sh
+
 ./vps.sh
